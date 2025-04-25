@@ -17,7 +17,13 @@ return new class extends Migration
             $table->decimal('latitude', 10, 7);
             $table->decimal('longitude', 10, 7);
             $table->integer('telefone');
-            $table->string('endereco');
+            $table->string('cep');
+            $table->string('rua');
+            $table->string('numero');
+            $table->string('bairro');
+            $table->string('estado');
+            $table->string('cidade');
+
             $table->timestamps();
         });
     }
